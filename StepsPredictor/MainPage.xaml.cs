@@ -1,8 +1,4 @@
 ﻿namespace StepsPredictor;
-using System.Text;
-using CommunityToolkit.Maui.Alerts;
-using CommunityToolkit.Maui.Core;
-using CommunityToolkit.Maui.Storage;
 
 public partial class MainPage : ContentPage
 {
@@ -21,3 +17,4 @@ public partial class MainPage : ContentPage
 
     }
 }
+a
