@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StepsPredictor.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,150"
+            Spacing="40">
+
+            <Label
+                Text="Hello, Walker!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"/>
+
+            <Label
+                Text="Welcome to Steps Predictor"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"/>
+
+            <Label
+                x:Name="fileName"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level3"/>
+            
+            <Button
+                Clicked="UploadData_Clicked"
+                HorizontalOptions="Center"
+                Text="Upload Data"/>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

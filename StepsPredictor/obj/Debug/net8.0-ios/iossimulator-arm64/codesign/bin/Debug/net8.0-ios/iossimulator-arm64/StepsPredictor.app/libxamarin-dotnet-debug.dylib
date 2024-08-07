@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/juliasong/Documents/OPA_Kurs/Projects/Steps_Predictor/StepsPredictor/bin/Debug/net8.0-ios/iossimulator-arm64/StepsPredictor.app/libxamarin-dotnet-debug.dylib
