@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-maui",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/StepsPredictor"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-webapi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/StepsPredictorApi"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run-maui",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/path/to/your/maui/project"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "run-webapi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/path/to/your/webapi/project"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

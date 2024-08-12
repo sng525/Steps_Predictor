@@ -22,7 +22,7 @@
             <Label
                 x:Name="fileName"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level3"/>
+                SemanticProperties.HeadingLevel="Level4"/>
             
             <Button
                 Clicked="UploadData_Clicked"

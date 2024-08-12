@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch MAUI iOS",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/StepsPredictor/bin/Debug/net8.0-ios/iossimulator-arm64/StepsPredictor.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/StepsPredictor",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "env": {
+                "SIMULATOR_DEVICE_NAME": "iPhone 15"
+            }
+        },
+        {
+            "name": "Launch WebAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/StepsPredictorApi/bin/Debug/net8.0/StepsPredictorApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/StepsPredictorApi",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Both",
+            "configurations": ["Launch MAUI iOS", "Launch WebAPI"]
+        }
+    ]
+}
