@@ -45,11 +45,6 @@ public partial class MainPage : ContentPage
 
         try
         {
-            if (!File.Exists(fileResult.FullPath))
-            {
-                Console.WriteLine($"File does not exist: {fileResult.FullPath}");
-                return false;
-            }
             using var fileStream = File.OpenRead(fileResult.FullPath);
 
             byte[] bytes;
@@ -69,21 +64,6 @@ public partial class MainPage : ContentPage
             };
 
             return await UploadFile(form);
-        }
-        catch (FileNotFoundException ex)
-        {
-            Console.WriteLine($"File not found: {ex.Message}");
-            return false;
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            Console.WriteLine($"Access denied: {ex.Message}");
-            return false;
-        }
-        catch (IOException ex)
-        {
-            Console.WriteLine($"I/O error: {ex.Message}");
-            return false;
         }
         catch (Exception ex)
         {
