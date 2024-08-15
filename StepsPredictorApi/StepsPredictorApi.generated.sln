@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StepsPredictorApi", "StepsPredictorApi.csproj", "{80DFF3B8-5BEB-4EB4-9E93-0633C0B149B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StepsPredictorApi", "StepsPredictorApi.csproj", "{3B480B88-5AE5-4A84-959C-2CB3D12585A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80DFF3B8-5BEB-4EB4-9E93-0633C0B149B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80DFF3B8-5BEB-4EB4-9E93-0633C0B149B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80DFF3B8-5BEB-4EB4-9E93-0633C0B149B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80DFF3B8-5BEB-4EB4-9E93-0633C0B149B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B480B88-5AE5-4A84-959C-2CB3D12585A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B480B88-5AE5-4A84-959C-2CB3D12585A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B480B88-5AE5-4A84-959C-2CB3D12585A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B480B88-5AE5-4A84-959C-2CB3D12585A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

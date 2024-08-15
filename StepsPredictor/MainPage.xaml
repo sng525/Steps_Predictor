@@ -16,13 +16,13 @@
             <Label
                 Text="Welcome to Steps Predictor"
                 Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"/>
+                FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level2"/>
 
             <Label
                 x:Name="fileName"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level4"/>
+                FontSize="18"/>
             
             <Button
                 Clicked="UploadData_Clicked"

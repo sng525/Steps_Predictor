@@ -23,19 +23,24 @@ public partial class MainPage : ContentPage
         {
             var file = await ProcessFile(result);
             if (file)
+            {
                 await DisplayAlert(
                     "File uploaded successfully",
                     "The file has been uploaded successfully",
                     "OK"
                 );
+            }
             else
+            {
                 await DisplayAlert(
                     "An error occurred",
                     "An error occurred while uploading the file",
                     "OK"
                 );
+            }
+            var uploadedFile = new UploadedFile(result.FileName);
+            await Navigation.PushAsync(new PredictPage(uploadedFile));
         }
-        fileName.Text = result.FileName;
     }
 
     private static async Task<bool> ProcessFile(FileResult fileResult)

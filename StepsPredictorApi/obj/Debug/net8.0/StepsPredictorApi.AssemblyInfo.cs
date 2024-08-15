@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StepsPredictorApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+690f29a1f3532e462f6eb403ca01ef2330f493a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+887f3923c046fcf4fe37c6e155f9b384614548d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("StepsPredictorApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StepsPredictorApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
