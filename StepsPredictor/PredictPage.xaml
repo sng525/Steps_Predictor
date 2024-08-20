@@ -13,8 +13,8 @@
             FontSize="24"/>
 
         <Button
-            Clicked="PredictSteps_Clicked"
+            Clicked="CleanData_Clicked"
             HorizontalOptions="Center"
-            Text="Predict Steps"/>
+            Text="Clean Data"/>
     </VerticalStackLayout>
 </ContentPage>
