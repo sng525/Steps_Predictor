@@ -7,7 +7,8 @@ public partial class PredictPage : ContentPage
 		InitializeComponent();
 		fileName.Text = file.FileName;
 	}
-	private async void CleanData_Clicked(object sender, EventArgs e){
-		
+	private async void CleanData_Clicked(object sender, EventArgs e)
+	{
+		∂
 	}
 }

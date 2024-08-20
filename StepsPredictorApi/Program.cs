@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -15,43 +17,48 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllers();
 
-app.MapPost("/uploadFile", async (HttpRequest httpRequest) =>
-{
-    if (!httpRequest.HasFormContentType)
-    {
-        return Results.BadRequest();
-    }
 
-    try
-    {
-        var formCollection = await httpRequest.ReadFormAsync();
+// app.MapPost("/uploadFile", async (HttpRequest httpRequest) =>
+// {
+//     if (!httpRequest.HasFormContentType)
+//     {
+//         return Results.BadRequest();
+//     }
 
-        var iFormFile = formCollection.Files["fileContent"];
+//     try
+//     {
+//         var formCollection = await httpRequest.ReadFormAsync();
 
-        if (iFormFile is null || iFormFile.Length == 0 )
-        {
-            return Results.BadRequest();
-        }
+//         var iFormFile = formCollection.Files["fileContent"];
 
-        using var stream = iFormFile.OpenReadStream();
+//         if (iFormFile is null || iFormFile.Length == 0 )
+//         {
+//             return Results.BadRequest();
+//         }
 
-        var localFilePath = Path.Combine("Files", iFormFile.FileName);
+//         using var stream = iFormFile.OpenReadStream();
 
-        using var localFileStream = File.OpenWrite(localFilePath);
+//         var localFilePath = Path.Combine("Files", iFormFile.FileName);
 
-        await stream.CopyToAsync(localFileStream);
+//         using var localFileStream = File.OpenWrite(localFilePath);
 
-        return Results.NoContent();
-    }
-    catch (Exception ex) 
-    {
-        app.Logger.LogError(ex.Message);
-        return Results.BadRequest();
-    }
-})
-.Produces(StatusCodes.Status201Created)
-.WithName("UploadFile")
-.WithOpenApi();
+//         await stream.CopyToAsync(localFileStream);
+
+//         return Results.NoContent();
+//     }
+//     catch (Exception ex) 
+//     {
+//         app.Logger.LogError(ex.Message);
+//         return Results.BadRequest();
+//     }
+// })
+// .Produces(StatusCodes.Status201Created)
+// .WithName("UploadFile")
+// .WithOpenApi();
+
 
 app.Run();
