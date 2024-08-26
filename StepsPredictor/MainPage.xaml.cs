@@ -87,7 +87,7 @@ public partial class MainPage : ContentPage
         var client = new HttpClient
         {
             Timeout = TimeSpan.FromMinutes(5),
-            BaseAddress = new Uri("http://localhost:5140")
+            BaseAddress = new Uri("http://localhost:5140/WalkingData")
         };
 
         try

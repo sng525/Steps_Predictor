@@ -1,4 +1,4 @@
-def clean(data):
+def clean_data(data):
     cleaned_data = {
         "date": data.get("date"),
         "steps": data.get("steps")

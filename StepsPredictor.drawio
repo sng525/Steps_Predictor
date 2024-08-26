@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="LX_qo-Hpl9w2MyAxb0YF">
-        <mxGraphModel dx="1734" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2042" dy="1670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -107,9 +107,6 @@
                 </mxCell>
                 <mxCell id="Lw-I1L2H1XPd6LwriKKZ-74" value="Open the app:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="340" y="-720.75" width="100" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Week 30 (July 22 - July 28)&lt;/h1&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;1. Research:&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;1) How to develop an Android app using C#&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;2) How to integrate the machine learning model into the application&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;3) How to read local files from a device&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="160" width="720" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Data Collection" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="270" y="320" width="120" height="60" as="geometry"/>
@@ -378,78 +375,107 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="140" value="Python ML" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="450" y="1315" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="810" y="1340" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="145" value="" style="edgeStyle=none;html=1;" parent="1" source="142" target="144" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="142" value="ONNX" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="605" y="1315" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="965" y="1340" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="144" value="ML .NET&lt;br&gt;Into the project directly" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="805" y="1315" width="155" height="60" as="geometry"/>
+                    <mxGeometry x="1165" y="1340" width="155" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="146" value="Api" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="725" y="1205" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="1085" y="1230" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="153" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="147" target="152">
+                <mxCell id="153" value="" style="edgeStyle=none;html=1;" parent="1" source="147" target="152" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="147" value="Clean Data button&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-180" y="1325" width="110" height="50" as="geometry"/>
+                <mxCell id="147" value="Clean Data button&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-260" y="1325" width="110" height="55" as="geometry"/>
                 </mxCell>
-                <mxCell id="151" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="152" target="150">
+                <mxCell id="151" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="152" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="80" y="1350" as="sourcePoint"/>
+                        <mxPoint x="160.00000000000023" y="1350" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="162" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="150" target="161">
+                <mxCell id="172" value="" style="edgeStyle=none;html=1;startArrow=none;" parent="1" source="173" target="171" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="150" value="Preprocessing File" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="160" y="1320" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="172" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="152" target="171">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="152" value="&lt;b&gt;WebApi&lt;/b&gt;&lt;br&gt;&lt;br&gt;Clean Data Function" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+                <mxCell id="152" value="&lt;b&gt;&lt;font color=&quot;#000099&quot;&gt;WebApi&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Clean Data Function" style="ellipse;whiteSpace=wrap;html=1;rounded=0;strokeColor=#CC0000;" parent="1" vertex="1">
                     <mxGeometry x="-10" y="1310" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="157" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.957;entryY=0.686;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="150" target="152">
+                <mxCell id="157" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.957;entryY=0.686;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="-50" y="1430" as="sourcePoint"/>
-                        <mxPoint y="1380" as="targetPoint"/>
+                        <mxPoint x="160.00000000000023" y="1360" as="sourcePoint"/>
+                        <mxPoint x="66.55999999999995" y="1359.88" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="158" value="Return cleaned data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="47" y="1375" width="130" height="30" as="geometry"/>
+                <mxCell id="158" value="Return cleaned data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="1400" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="159" value="Send the file" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="67" y="1315" width="90" height="30" as="geometry"/>
+                <mxCell id="159" value="Send the orignal file" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="1275.5" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="161" value="1. Find a simple and small data as test data&lt;br&gt;2. Create a simple preprocessing file in Python&lt;br&gt;3. Connect the Python file with WebApi in C#" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-                    <mxGeometry x="140" y="1420" width="240" height="110" as="geometry"/>
+                <mxCell id="161" value="1. Find a simple and small data as test data&lt;br&gt;2. Create a simple preprocessing file in Python&lt;br&gt;3. Connect the Python file with WebApi in C#" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="272.5" y="1430" width="215" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="164" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. Get data from the folder&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Send the data file to Preprocessing File&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Get the cleaned data and save the data somewhere in WebApi&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="-45" y="1400" width="185" height="100" as="geometry"/>
+                <mxCell id="164" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. Get data from the folder&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Send the data file to Preprocessing File&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Get the cleaned data and save the data somewhere in WebApi&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-40" y="1450" width="185" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="165" value="Upload File Button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-180" y="1260" width="115" height="50" as="geometry"/>
+                <mxCell id="174" style="edgeStyle=none;html=1;entryX=0.039;entryY=0.305;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000099;" edge="1" parent="1" source="165" target="152">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="166" value="App" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="-152" y="1210" width="60" height="30" as="geometry"/>
+                <mxCell id="165" value="Upload File Button" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-262.5" y="1260" width="115" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="167" value="Python ML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="160" y="1240" width="120" height="60" as="geometry"/>
+                <mxCell id="166" value="&lt;b&gt;&lt;font color=&quot;#000099&quot;&gt;.NET MAUI App&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-232" y="1210" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="170" value="Project for ML" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="170" y="1195" width="100" height="30" as="geometry"/>
+                <mxCell id="167" value="Python ML" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="1240" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="&lt;b&gt;Azure&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="-10" y="1150" width="80" height="80" as="geometry"/>
+                <mxCell id="171" value="&lt;b&gt;Azure&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-10" y="1140" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="173" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Local File&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;shadow=1;labelBackgroundColor=none;strokeColor=#FFB366;fontFamily=Helvetica;fontSize=14;fontColor=none;fillColor=#CCE5FF;" vertex="1" parent="1">
-                    <mxGeometry y="1245" width="60" height="50" as="geometry"/>
+                <mxCell id="175" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Send data&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000099;" vertex="1" parent="1">
+                    <mxGeometry x="-105" y="1290" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" value="" style="edgeStyle=none;html=1;endArrow=none;" edge="1" parent="1" source="152" target="173">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="30" y="1310" as="sourcePoint"/>
+                        <mxPoint x="30" y="1230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="173" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Local File&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;shadow=1;labelBackgroundColor=none;strokeColor=#FFB366;fontFamily=Helvetica;fontSize=14;fontColor=none;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry y="1240" width="60" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;fontColor=#000099;" edge="1" parent="1" source="177" target="161">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" value="&lt;font color=&quot;#000099&quot;&gt;Preprocessing File&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1322.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="" style="edgeStyle=none;html=1;fontSize=10;fontColor=#000099;" edge="1" parent="1" source="178" target="177">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="&lt;b style=&quot;&quot;&gt;Flask API&amp;nbsp;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#CC0000;fontSize=10;fontColor=#000099;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="1312.5" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="180" value="" style="endArrow=classic;html=1;entryX=0.957;entryY=0.686;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="293.44" y="1360" as="sourcePoint"/>
+                        <mxPoint x="239.99999999999994" y="1360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="320" y="1360"/>
+                            <mxPoint x="280" y="1360.43"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="&lt;font color=&quot;#000000&quot;&gt;Get access to cleaned data&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#000099;" vertex="1" parent="1">
+                    <mxGeometry x="-150" y="1355" width="140" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

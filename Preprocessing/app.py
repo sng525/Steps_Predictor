@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/clean-data', methods=['POST'])
 def clean_data():
     raw_data = request.json
-    cleaned_data = data_cleaning_module.clean(raw_data)
+    cleaned_data = data_cleaning_module.clean_data(raw_data)
     return jsonify(cleaned_data)
 
 if __name__ == '__main__':

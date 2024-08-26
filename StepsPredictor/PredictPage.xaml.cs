@@ -9,6 +9,6 @@ public partial class PredictPage : ContentPage
 	}
 	private async void CleanData_Clicked(object sender, EventArgs e)
 	{
-		∂
+		
 	}
 }
