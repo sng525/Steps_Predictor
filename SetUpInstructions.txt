@@ -1,0 +1,12 @@
+1 - in terminal: dotnet workload install maui (Only the first time)
+2 - clone repo
+3 - Navigate to the Cloned Directory
+2 - Create a New .NET MAUI Project:
+        .in terminal: dotnet new maui -n MyMauiApp
+        .This will create a new .NET MAUI project in a 
+        subdirectory called MyMauiApp. If you prefer to 
+        create the project directly in the current directory (
+        overwriting the existing files), you can omit the 
+        -n option: dotnet new maui
+        This will overwrite any existing files in the directory, 
+        so make sure it’s the desired approach.

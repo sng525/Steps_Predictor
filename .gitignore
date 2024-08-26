@@ -1,0 +1,17 @@
+# Ignore bin and obj folders
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.vs/
+
+# Ignore build output
+*.dll
+*.exe
+*.pdb
+*.cache
+
+#projects to ignore
+ml_model/
