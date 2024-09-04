@@ -32,4 +32,4 @@
 /Users/juliasong/Documents/OPA_Kurs/Projects/Steps_Predictor/StepsPredictorApi/obj/Debug/net8.0/StepsPredictorApi.pdb
 /Users/juliasong/Documents/OPA_Kurs/Projects/Steps_Predictor/StepsPredictorApi/obj/Debug/net8.0/StepsPredictorApi.genruntimeconfig.cache
 /Users/juliasong/Documents/OPA_Kurs/Projects/Steps_Predictor/StepsPredictorApi/obj/Debug/net8.0/ref/StepsPredictorApi.dll
-/Users/juliasong/Documents/OPA_Kurs/Projects/Steps_Predictor/StepsPredictorApi/bin/Debug/net8.0/Files/data.json
+/Users/juliasong/Documents/OPA_Kurs/Projects/Steps_Predictor/StepsPredictorApi/bin/Debug/net8.0/Files/RandomData.json

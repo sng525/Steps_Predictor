@@ -15,11 +15,20 @@ public class WalkingDataController : ControllerBase
     }
 
     [HttpPost("cleanData")]
-    public async Task<IActionResult> CleanWalkingData([FromBody] JsonElement rawData)
+    public async Task<IActionResult> CleanWalkingData()
     {
-        var jsonData = JsonSerializer.Serialize(rawData);
-        var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PostAsync("http://localhost:5001/clean-data", content);
+        // Get the raw data path
+        var rawDataPath = Path.Combine(Directory.GetCurrentDirectory(), "Files/RandomData.json");
+
+        if (rawDataPath == null)
+        {
+            return StatusCode(404, "No data file found.");
+        }
+        // var jsonData = JsonSerializer.Serialize(rawData);
+
+        var rawData = await System.IO.File.ReadAllTextAsync(rawDataPath);
+        var content = new StringContent(rawData, Encoding.UTF8, "application/json");
+        var response = await _client.PostAsync("http://localhost:5004/clean-data", content);
 
         if (response.IsSuccessStatusCode)
         {
@@ -34,7 +43,7 @@ public class WalkingDataController : ControllerBase
             var filePath = Path.Combine(storagePath, fileName);
             await System.IO.File.WriteAllTextAsync(filePath, cleanedData);
 
-            return Ok(new { message = "Cleaned data stored successfully.", filePath });
+            return Ok(new { message = "Cleaned data stored successfully." });
         }
         return StatusCode(500, "Error cleaning data");
     }
