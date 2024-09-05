@@ -17,33 +17,42 @@ public class WalkingDataController : ControllerBase
     [HttpPost("cleanData")]
     public async Task<IActionResult> CleanWalkingData()
     {
-        // Get the raw data path
-        var rawDataPath = Path.Combine(Directory.GetCurrentDirectory(), "Files/RandomData.json");
+        // Get the raw data directory
+        var rawDataDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Files");
 
-        if (rawDataPath == null)
+        if (rawDataDirectory == null)
         {
             return StatusCode(404, "No data file found.");
         }
-        // var jsonData = JsonSerializer.Serialize(rawData);
 
-        var rawData = await System.IO.File.ReadAllTextAsync(rawDataPath);
-        var content = new StringContent(rawData, Encoding.UTF8, "application/json");
-        var response = await _client.PostAsync("http://localhost:5004/clean-data", content);
+        // Get all the files in the directory
+        var filePaths = Directory.GetFiles(rawDataDirectory);
 
-        if (response.IsSuccessStatusCode)
+        if (filePaths.Length > 0)
         {
-            var cleanedData = await response.Content.ReadAsStringAsync();
-            var storagePath = Path.Combine(Directory.GetCurrentDirectory(), "CleanedFile");
-            if (!Directory.Exists(storagePath))
+            var firstFilePath = filePaths[0];  // first file
+            var rawData = await System.IO.File.ReadAllTextAsync(firstFilePath);
+
+            // var jsonData = JsonSerializer.Serialize(rawData);
+
+            var content = new StringContent(rawData, Encoding.UTF8, "application/json");
+            var response = await _client.PostAsync("http://localhost:5004/clean-data", content);
+
+            if (response.IsSuccessStatusCode)
             {
-                Directory.CreateDirectory(storagePath);
+                var cleanedData = await response.Content.ReadAsStringAsync();
+                var storagePath = Path.Combine(Directory.GetCurrentDirectory(), "CleanedFile");
+                if (!Directory.Exists(storagePath))
+                {
+                    Directory.CreateDirectory(storagePath);
+                }
+
+                var fileName = "cleaned_file.json";
+                var filePath = Path.Combine(storagePath, fileName);
+                await System.IO.File.WriteAllTextAsync(filePath, cleanedData);
+
+                return Ok(new { message = "Cleaned data stored successfully." });
             }
-
-            var fileName = "cleaned_file.json";
-            var filePath = Path.Combine(storagePath, fileName);
-            await System.IO.File.WriteAllTextAsync(filePath, cleanedData);
-
-            return Ok(new { message = "Cleaned data stored successfully." });
         }
         return StatusCode(500, "Error cleaning data");
     }

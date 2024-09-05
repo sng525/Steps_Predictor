@@ -12,10 +12,10 @@ public partial class PredictPage : ContentPage
 		var client = new HttpClient
         {
             Timeout = TimeSpan.FromMinutes(5),
-            BaseAddress = new Uri("http://localhost:5140/WalkingData")
+            BaseAddress = new Uri("http://localhost:5140/")
         };
 
-		var response = await client.PostAsync("cleanData", null);
+		var response = await client.PostAsync("WalkingData/cleanData", null);
 		if (response.IsSuccessStatusCode)
 		{
 			await DisplayAlert("Success", "Successfully cleaned the data.", "OK");
