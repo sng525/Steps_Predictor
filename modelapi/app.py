@@ -2,13 +2,18 @@ from flask import Flask, jsonify, abort, request
 import requests
 import subprocess
 import os
-#import ml_model.model_training
+import sys
+
+module_dir = os.path.abspath(r"C:\Users\olish\Documents\ml_projects\Steps_Predictor\ml_model")
+sys.path.insert(0, module_dir)
+
+import model_training
 
 app = Flask(__name__)
 
 BASE_URL = "http://localhost:5170"
 RETRIEVED_FILE_DIR = r"files"
-RETRIEVED_FILE_NAME = r"retrieved_file.txt"
+RETRIEVED_FILE_NAME = r"retrieved_file.csv"
 #MODEL_DIR = 'ml_model\model_training.py'
 
 @app.route('/get-file/<filename>', methods=['GET'])
@@ -48,15 +53,15 @@ def get_file(filename):
                 file.write(response.content) 
             print("File written successfully.")
 
-            # try:
-            #     ml_model.model_training.main()
-            #     print("model trainining pipeline executed successfuly")
-            # except Exception as e:
-            #     print("Error running model pipline")
-            #     return jsonify({'error': 'error running model pipeline'}), 500
+            filepath = "files/retrieved_file.csv"
+            try:
+                model_training.main(filepath, 'Species')
+                print("model trainining pipeline executed successfuly")
+                return jsonify({'message':'file retrieved and model pipeline executed'}), 200
+            except Exception as e:
+                print("Error running model pipeline")
+                return jsonify({'error': 'error running model pipeline'}), 500
         
-            # return jsonify({'message':'file retrieved and model pipline executed'}), response.status_code
-
         elif response.status_code == 404:
             print("file not found on the server.")
             return jsonify({'error': 'file not found'}), 404

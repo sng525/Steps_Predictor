@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
 
 			try
 			{
-				var flask_url = "http://127.0.0.1:5000/get-file/export.xml";
+				var flask_url = "http://127.0.0.1:5000/get-file/iris.csv";
 				var response = await http_client.GetAsync(flask_url);
 				Console.WriteLine("failed to connect");
 				if (response.IsSuccessStatusCode)
