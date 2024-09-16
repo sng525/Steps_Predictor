@@ -16,5 +16,12 @@
                 Text="Upload Data" 
                 SemanticProperties.Hint="Uploads user data"
                 HorizontalOptions="Fill" />
+
+        <Button
+                x:Name="btnTrain"
+                Clicked="onTrainBtnClicked"
+                Text="train model" 
+                SemanticProperties.Hint="Sends data to model trainer"
+                HorizontalOptions="Fill" />    
     </VerticalStackLayout>
 </ContentPage>

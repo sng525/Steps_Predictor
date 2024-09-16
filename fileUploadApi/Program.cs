@@ -6,16 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.ConfigureKestrel(options =>
 {
     options.ListenLocalhost(5170); // HTTP
-    options.ListenLocalhost(7035, listenOptions => // https 
-    {
-        listenOptions.UseHttps();
-    });
+    // options.ListenLocalhost(7035, listenOptions => // https 
+    // {
+    //     listenOptions.UseHttps();
+    // });
 
     // resolves timeout error
     options.Limits.MinRequestBodyDataRate = new MinDataRate(100, TimeSpan.FromSeconds(10));
-
     options.Limits.MaxRequestBodySize = 100 * 1024 * 1024; // 100 MB
-
     options.Limits.RequestHeadersTimeout = TimeSpan.FromMinutes(2);
 });
 
@@ -30,8 +28,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.MapPost("/uploadfile", async (HttpRequest httpRequest) =>
 {
@@ -69,6 +66,29 @@ app.MapPost("/uploadfile", async (HttpRequest httpRequest) =>
 
 .Produces(StatusCodes.Status201Created)
 .WithName("UploadFile")
+.WithOpenApi();
+
+//Server
+
+var filesDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+
+app.MapGet("/Files", async (string fileName) =>
+{
+    var filePath = Path.Combine(filesDirectory, fileName);
+
+    if(!File.Exists(filePath))
+    {
+        return Results.NotFound("File not found.");
+    }
+
+    var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+    var contentType = "application/octet-stream";
+
+    return Results.File(fileStream, contentType, fileName);
+})
+.Produces(StatusCodes.Status200OK)
+.Produces(StatusCodes.Status404NotFound)
+.WithName("GetFile")
 .WithOpenApi();
 
 app.Run();

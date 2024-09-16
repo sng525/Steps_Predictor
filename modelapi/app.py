@@ -2,6 +2,7 @@ from flask import Flask, jsonify, abort, request
 import requests
 import subprocess
 import os
+#import ml_model.model_training
 
 app = Flask(__name__)
 
@@ -47,13 +48,22 @@ def get_file(filename):
                 file.write(response.content) 
             print("File written successfully.")
 
-            #subprocess.Popen(['python3', MODEL_DIR, retreived_file_path])
-
-            return jsonify({'message':'file retreived'}), response.status_code
+            # try:
+            #     ml_model.model_training.main()
+            #     print("model trainining pipeline executed successfuly")
+            # except Exception as e:
+            #     print("Error running model pipline")
+            #     return jsonify({'error': 'error running model pipeline'}), 500
         
+            # return jsonify({'message':'file retrieved and model pipline executed'}), response.status_code
+
         elif response.status_code == 404:
-            print("File not found on the server.")
-            return jsonify({'error': 'File not found'}), 404
+            print("file not found on the server.")
+            return jsonify({'error': 'file not found'}), 404
+            
+        elif response.status_code == 404:
+                print("File not found on the server.")
+                return jsonify({'error': 'File not found'}), 404
         
         else:
             print(f"Failed to retrieve file. Status code: {response.status_code}")
