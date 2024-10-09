@@ -13,8 +13,14 @@
             FontSize="24"/>
 
         <Button
-            Clicked="CleanData_Clicked"
+            Clicked="Predict_Clicked"
             HorizontalOptions="Center"
-            Text="Clean Data"/>
+            Text="Predict Today's Steps"/>
+
+        <Label 
+            x:Name="lblResult"
+            FontSize="20"
+            Text=""
+            HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

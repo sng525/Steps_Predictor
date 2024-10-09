@@ -46,9 +46,10 @@ def extract_data():
         # records[date_only] += value
 
     df = pd.DataFrame(records, columns=['type', 'source_name', 'start_date', 'end_date', 'value', 'unit'])
-    df.to_csv("steps_count.csv", index=False)
+    # df.to_csv("steps_count.csv", index=False)
+    return df
 
-extract_data()
+# extract_data()
 
 # extract_types()
 # for type_value in types_set:
