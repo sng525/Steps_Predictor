@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e">
+    <diagram id="NCnHbkyvjQnf33K9ZKgd" name="Page-1">
+        <mxGraphModel dx="2484" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Artefacts:&lt;br&gt;- raw data&lt;br&gt;&lt;br&gt;- train set&lt;br&gt;- test set" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+                    <mxGeometry x="250.5" y="80" width="80" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Data:&lt;br&gt;- oli's xml&lt;br&gt;- elina's xml" style="shape=datastore;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="220" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Ingestion:&lt;br&gt;- clone raw data&lt;br&gt;- train, test, split" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="214" y="250" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Transformation:&lt;br&gt;&lt;br&gt;1) Load train and test sets&lt;br&gt;2) Fit preprocessing pipline on train set&lt;br&gt;3) Transform the training data&lt;br&gt;4) Transform test (without refitting)&lt;br&gt;5) save both set for trating and evaluation&amp;nbsp;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="232.5" width="390" height="117.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Trainer" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="251.25" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;html=1;entryX=0.411;entryY=1.032;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="284" y="250" as="sourcePoint"/>
+                        <mxPoint x="334" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="160" y="290" as="sourcePoint"/>
+                        <mxPoint x="210" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1.004;exitY=0.752;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330.5" y="142" as="sourcePoint"/>
+                        <mxPoint x="550" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="550" y="155"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;exitX=0.908;exitY=0.399;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="7" edge="1" source="6">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="750" y="280" as="sourcePoint"/>
+                        <mxPoint x="690" y="232.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/olish/Documents/ml_projects/Steps_Predictor/model/mlruns/143027445298785196
+creation_time: 1733917430147
+experiment_id: '143027445298785196'
+last_update_time: 1733917430147
+lifecycle_stage: active
+name: stacked_lstm_v1

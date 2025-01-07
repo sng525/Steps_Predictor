@@ -1,0 +1,12 @@
+pandas
+numpy
+seaborn
+scikit-learn
+setuptools
+ipykernel 
+flask
+requests
+
+#data exploration
+elementpath
+matplotlib
